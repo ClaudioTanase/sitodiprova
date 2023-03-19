@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <meta charset="utf-8" />
+    <title>Crypto Genius</title>
+    <link href="stile.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <a href="Index.html"><img src="img/Logo_Crypto.png" alt="Logo_Crypto" height="110px" /></a>
+    </header>
+    <div class="container">
+      <nav>
+        <br /><br />
+        <ul>
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="chisiamo.html">Chi siamo</a></li>
+          <li><a href="contattaci.html">Contattaci</a></li>
+          <li><a href="Grafici.html">Grafici</a></li>
+          <li><a href="Staff.html">Founders</a></li>
+        </ul>
+      </nav>
+      <section>
+        <h2>Grafico Ethereum</h2>
+        <h6>grafico Bitcoin <a href="Grafici.html">qui</a></h6>
+        <canvas width="17%" id="myChart"></canvas>
+        <script>
+          const ctx = document.getElementById("myChart").getContext("2d");
+          const chart = new Chart(ctx, {
+            type: "line",
+            data: {
+              labels: [
+                "Gennaio",
+                "Febbraio",
+                "Marzo",
+                "Aprile",
+                "Maggio",
+                "Giugno",
+                "Luglio",
+              ],
+              datasets: [
+                {
+                  label: "Prezzo Ethereum in €",
+                  data: [10000, 18000, 12000, 10000, 15000, 20000, 18000],
+                  borderColor: "rgb(255, 99, 132)",
+                  backgroundColor: "rgba(255, 99, 132, 0.2)",
+                },
+              ],
+            },
+            options: {},
+          });
+        </script>
+      </section>
+    </div>
+    <footer>
+      <br />
+      <br />
+      <p>© 2020-2023 Claudio Tanase All Rights Reserved.</p>
+      <a href="https://it-it.facebook.com/"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com/claudio_tanase"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/tanaseclaudio_/"
+        ><i class="fab fa-instagram"></i
+      ></a>
+    </footer>
+  </body>
+</html>
